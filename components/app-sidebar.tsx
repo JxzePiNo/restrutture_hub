@@ -153,7 +153,10 @@ const data = {
   ],
 }
 
+
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+
+  
   return (
     <Sidebar collapsible="offcanvas" {...props}>
       <SidebarHeader>
@@ -164,7 +167,13 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
               <a style={{justifyContent: "left"}} href="#">
-                
+              <Image
+                  src="/logorestrutturehub.png"
+                  alt="Logo re.strutture"
+                  width={100}
+                  height={100}
+                  className="rounded-sm" // opzionale: puoi stilizzarlo come preferisci
+                />
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
